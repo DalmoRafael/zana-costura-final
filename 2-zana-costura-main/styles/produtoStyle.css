@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS PADRÃO PARA TODAS AS PÁGINAS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+}
+html {
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 2.5em;
+    font-weight: 200;
+    color: #343434;
+}
+
+h3{
+    font-size: 1.4em;
+    color: #343434;
+}
+h4 {
+    font-weight: 300;
+}
+
+h5{
+    font-size: 1em;
+    color: #f4f4f4;
+    cursor: default;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: #E9B8B1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+#inputBusca {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 9999px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #343434;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #474747;
+}
+
+.header-home,
+.header-produto,
+.header-ajuda,
+.header-sobre {
+    transition: 0.2s;
+    font-size: 30px;
+    color: #343434;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: 300;
+}
+
+.header-home:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-produto:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-ajuda:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-sobre:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+nav {
+    font-size: 1em;
+    padding-left: 24px;
+}
+li {
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin-top: 36px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
+}
+footer img {
+    margin: auto 0;
+}
+footer a {
+    all: unset;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+    transition: 0.2s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.buscar {
+    display: flex;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+.item-name {
+    margin-left: 15px;
+}
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 8px;
+}
+.icon-links {
+    font-size: 24px;
+}
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: 200ms;
+}
+
+.logo-home:hover {
+    height: 120px;
+}
+.contact-links {
+    display: flex;
+}
+#listaProdutos {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+#listaProdutos li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+#listaProdutos li a:hover {
+    background: #ddd;
+}
+
+#siteSections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#goBack {
+    height: 90px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #F4F4F4;
+    animation: pulse 1s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 157px;
+    height: 100%;
+}
+
+#contacts h5 {
+    margin-bottom: 8px;
+}
+
+/* MAIN PAGE CSS */
+
+main {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article {
+    font-size: 24px;
+    color: #343434;
+    font-weight: 300;
+}
+
+.hide {
+    display: none;
+}
+.slider a {
+    transition: 0.2s;
+    font-size: 30px;
+    color:#343434;
+    text-decoration: none;
+    margin: 8px;
+}
+.slider a:hover {
+    font-size: 36px;
+    text-decoration:underline;
+}
+
+#underlined {
+    text-decoration: underline;
+}
+
+.prod {
+    transition: 0.2s;
+    margin-top: 64px;
+    height: 46.7vh;
+    width: 27.3vw;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prod:hover {
+    background:#F4E4D5;
+    height:47vh;
+    width:27.6vw;
+    border:2px solid #E9B8B1;
+    box-shadow: 2px 2px 3px #343434;
+}
+
+.prodLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prodRight {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.prodImg {
+    margin-left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+.column {
+    display: grid;
+    justify-content: center;
+}
+
+.buyButton {
+    transition: 0.2s;
+    background-color: #E9B8B1;
+    border-radius: 20px;
+    font-size: 100%;
+    padding: 8%;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #343434;
+    color: #343434;
+    font-weight: 300;
+}
+
+.buyButton:hover {
+    transform: scale(1.15);
+}
+
+.prodDescription {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.prodRightDown {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.container-roupa-personalizada {
+    display: flex;
+    justify-content: center;
+}
+.button-personalizado {
+    transition: 0.2s;
+    background-color: #E9B8B1;
+    border-radius: 20px;
+    font-size: 100%;
+    cursor: pointer;
+    padding: 15%;
+    box-shadow: 1px 1px 2px #343434;
+    color: #343434;
+    font-weight: 300;
+}
+.button-personalizado:hover {
+    transform: scale(1.15);
+}
+.article-personalizado {
+    display: flex;
+    justify-content: center;
+    margin: 0 7.5%;
+    font-size: 24px;
+    color: #343434;
+    font-weight: 300;
+}
+
+#roupa-personalizada {
+    display: flex;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+    /* PADRÃO PARA TODAS AS PÁGINAS */
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+        padding: 8px 0px;
+    }
+    #siteSections {
+        flex-direction: column;
+    }
+    .header-home,
+    .header-produto,
+    .header-ajuda,
+    .header-sobre {
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        font-size: 26px;
+        color:#474747;
+        text-decoration: none;
+        margin: 4px;
+    }
+
+    .header-home:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-produto:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-ajuda:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-sobre:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #inputBusca {
+        font-size: 16px;
+        height: 36px;
+        padding:0 22%;
+    }
+    .logo-home {
+        height: 75px;
+        margin: 12px 0px;
+    }
+    .logo-home:hover {
+        height: 90px;
+    }
+    .buscar {
+        margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts {
+        margin: 8px 0;
+    }
+    #contacts h5, h4, time {
+        display: flex;
+        justify-content: center;
+    }
+    #goBack {
+        height: 105px;
+        margin-bottom: 24px;
+    }
+
+}

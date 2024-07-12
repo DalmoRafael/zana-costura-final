@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E9B8B1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Vestido Primavera - Zana Costuras</title>
+    <link rel="stylesheet" href="./styles/styleCompra.css">
+    <link rel="icon" href="./logo/zana costuras Logo.png">
+    <script src="./scripts/scriptCompra.js"></script>
+    <script src="./scripts/homeScript.js"></script>
+</head>
+<body>
+    <header>
+        <a class="link-logo" href="index.html"><img class="logo-home" src="./logo/logo-zana-costuras.png"></a>
+        <section id="siteSections">
+            <a class="header-home" href="index.html" class="underlined">Home</a>
+            <a class="header-produto" href="newProduct.html">Produtos</a>
+            <a class="header-ajuda" href="ajuda.html">Ajuda</a>
+            <a class="header-sobre" href="sobre.html">Sobre</a>
+        </section>
+        <section class="buscar">
+            <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
+                <ul id="listaProdutos" onblur="">
+                    <li>
+                        <a href="vestidoGalinhaPintadinha.html">
+                            <img width="45" height="" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido estilo galinha pintadinha azul com pontos brancos e um laço vermelho no meio do vestido">
+                            <span class="item-name">Vestido Galinha Pintadinha</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estiloCampestre.html">
+                            <img width="45" height="" src="./roupas/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido de estilo campestre">
+                            <span class="item-name">Vestido de estilo Campestre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoPrimavera.html">
+                            <img width="45" height="" src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido primavera">
+                            <span class="item-name">Vestido Primavera</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoFestaJuninaVermelho.html">
+                            <img width="45" height="" src="./roupas/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino quadriculado vermelho">
+                            <span class="item-name">Vestido festa junina quadriculado vermelho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoViolet.html">
+                            <img width="45" height="" src="./roupas/8a34e79b-9767-4888-a299-615493f4f937-removebg-preview.png" alt="vestido violeta com laço da mesma cor">
+                            <span class="item-name">Vestido violeta com laço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoArcoIrisJunino.html">
+                            <img width="45" height="" src="./roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido arco-íris junino">
+                            <span class="item-name">Vestido Arco-Íris junino</span>
+                        </a>
+                    </li>
+                </ul>
+                <script src="filtrar.js"></script>
+        </section>
+    </header>
+    <main>
+        <section class="product-section">
+            <div class="product-image">
+                <img id="mainImage" src="./roupas/d4778c3c-3c07-4bc3-80c7-2ad80d3fc9d0-removebg-preview.png" alt="Macacão Bebê"> <!--imagem principal mostrada-->
+                <div class="thumbnail-gallery">
+                    <img src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="Macacão Bebê" class="thumbnail active"> <!--A imagem que esta sendo amostrada-->
+                    <img src="./roupas/d4778c3c-3c07-4bc3-80c7-2ad80d3fc9d0-removebg-preview.png" alt="Macacão Bebê" class="thumbnail">  
+                </div>
+            </div>
+            <div class="product-details">
+                <h2 id="vestidoPrimavera">Vestido Primavera</h2>
+                <p>Tamanho da Roupa:</p>
+
+                <div class="size-buttons"> <!--Botao rosa-->
+                    <button class="size-buttons3" onclick="setSize('12 a 18 meses')">12 a 18 meses</button>
+                    <button class="size-buttons3" onclick="setSize('18 a 24 meses')">18 a 24 meses</button>
+                    <button class="size-buttons3" onclick="setSize('24 a 30 meses')">24 a 30 meses</button>
+                    <button class="size-buttons3" onclick="setSize('3 a 4 anos')">3 a 4 anos</button>
+                    <button class="size-buttons3" onclick="setSize('4 a 6 anos')">4 a 6 anos</button>
+                    <button class="size-buttons3" onclick="setSize('7 a 8 anos')">7 a 8 anos</button>
+                    <button class="size-buttons3" onclick="setSize('9 a 10 anos')">9 a 10 anos</button>
+                
+                </div>
+
+                <div class="price-info">
+                    <span>R$ 149,99</span>
+                    <button class="buy-button" id="btnPagamento" onclick="send('vestidoPrimavera')">Solicitar</button> <!--Botao de cor #B0AE99 solicitar-->
+                    <button class="buy-button" id="btnPagamento" onclick="location.href='sobMedida.html'">Solicitar Sob Medida</button>
+                </div>
+                <div class="product-contact">
+                    <ion-icon name="logo-whatsapp" class="icon-links" style="color: #666;"></ion-icon>
+                    <span>(71) 98809-0920</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-description">
+            <h3>Descrição do Produto</h3>
+            <p> Vestido acinturado com saia godê e detalhes amarelos. Feito em tecido de algodão, leve e macio 100% algodão sem manga. Decote nas costas. fechamento em botão e elástico traseiro.</p>
+        </section>
+        
+        <section class="size-chart">
+            <h3>Tabela de Medidas</h3>
+            <table>
+                <tr>
+                    <th> </th><th>Busto</th><th>Cintura</th><th>Quadril</th><th>Idade</th><th>Altura</th>
+                </tr>
+                <tr>
+                    <td>RN</td><td>40 cm</td><td>39 cm</td><td>41 cm</td><td>recém-nascido</td><td>48 a 51 cm</td>
+                </tr>
+                <tr>
+                    <td>P</td><td>42 cm</td><td>41 cm</td><td>42 cm</td><td>1 a 3 meses </td><td>52 a 61 cm</td>
+                </tr>
+                <tr>
+                    <td>M</td><td>43 - 44 cm</td><td>42 cm</td><td>43 - 45 cm</td><td>3 a 6 meses </td><td>62 a 66 cm</td>
+                </tr>
+                <tr>
+                    <td>G</td><td>45 - 46 cm</td><td>44 - 45 cm</td><td>46 - 47 cm</td><td>6 a 9 meses </td><td>67 a 71 cm</td>
+                </tr>
+                <tr>
+                    <td>GG</td><td>47 - 48 cm</td><td>46 - 47 cm</td><td>48 - 49 cm</td><td>9 a 12 meses </td><td>72 a 76 cm</td>
+                </tr>
+                <tr>
+                    <td>1</td><td>50 - 51 cm</td><td>50 - 51 cm</td><td>50 - 51 cm</td><td>12 a 18 meses</td><td>77 a 81 cm</td>
+                </tr>
+                <tr>
+                    <td>2</td><td>51 - 52 cm</td><td>50 - 51 cm</td><td>52 - 53 cm</td><td>18 a 24 meses</td><td>82 a 87 cm</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>53 - 56 cm</td><td>52 - 54 cm</td><td>54 - 56 cm</td><td>24 a 30 meses</td><td>88 a 97 cm</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>56 - 60 cm</td><td>54 - 55 cm</td><td>57 - 61 cm</td><td>3 a 4 anos</td><td>98 a 104 cm</td>
+                </tr>
+                <tr>
+                    <td>6</td><td>61 - 64 cm</td><td>56 - 57 cm</td><td>62 - 67 cm</td><td>4 a 6 anos</td><td>105 a 116 cm</td>
+                </tr>
+                <tr>
+                    <td>8</td><td>65 - 68 cm</td><td>58 - 59 cm</td><td>68 - 73 cm</td><td>7 a 8 anos</td><td>117 a 127 cm</td>
+                </tr>
+                <tr>
+                    <td>10</td><td>69 - 72 cm</td><td>60 - 61 cm</td><td>74 - 79 cm</td><td>9 a 10 anos</td><td>128 a 140 cm</td>
+                </tr>
+                <tr>
+                    <td>12</td><td>73 - 76 cm</td><td>62 - 63 cm</td><td>80 - 84 cm</td><td>11 a 12 anos</td><td>145 a 156 cm</td>
+                </tr>
+                <tr>
+                    <td>14</td><td>77 - 80 cm</td><td>64 - 65 cm</td><td>85 - 88 cm</td><td>13 a 14 anos</td><td>157 a 162 cm</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Devs</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/Brendoliveira" target="_blank">Brendo</a></li>
+                        <li><a href="https://github.com/lunguinhoantonio" target="_blank">Antônio Marcos</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Design</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><b><h5>Scrum Masters</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section id="contacts">
+            <h5>Contatos</h5>
+            <a class="contact-links" href="https://wa.me/5571988090920" target="_blank" >
+                <ion-icon name="logo-whatsapp" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                <h4>(71) 98809-0920</h4>
+            </a>
+            <a class="contact-links" href="https://www.instagram.com/zana.costura/" target="_blank">
+                <ion-icon name="logo-instagram" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                <h4>@zana.costuras</h4>
+            </a>
+            <h4>Zana Costuras &copy</h4>
+            <time>08/07/2024</time>
+        </section>
+    </footer>
+    <div class="backTop">
+        <ion-icon name="arrow-up" id="goBack" style="color: #343434;"></ion-icon>
+    </div>
+    
+        <!-- SCRIPT PARA APARECER O BOTÃO DE VOLTAR DEPOIS DA TELA DESCER UM POUCO -->
+
+        <script>
+            const header = document.querySelector('header');
+            const button = document.getElementById('goBack');
+            window.onscroll = (ev) => {
+              if (document.documentElement.scrollTop > header.getBoundingClientRect().y) {
+                button.style.display = 'block';
+                button.style.animation = 'fadeIn';
+                button.style.animationDuration = '0.5s';
+              } else {
+                button.style.display = 'none'; 
+                button.style.animation = 'fadeOut';
+                button.style.animationDuration = '0.5s';
+              } 
+            };
+            button.addEventListener('click', () => {
+              document.documentElement.scrollTop = 0;
+            });
+        </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

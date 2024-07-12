@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E9B8B1" />
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Produtos - Zana Costuras</title>
+    <script src="./scripts/homeScript.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/produtoStyle.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="logo/zana costuras Logo.png">
+    <link rel="stylesheet" href="styles/slider.css">
+</head>
+<body>
+    <header>
+        <a class="link-logo" href="index.html"><img class="logo-home" src="./logo/logo-zana-costuras.png"></a>
+        <section id="siteSections">
+            <a class="header-home" href="index.html" >Home</a>
+            <a class="header-produto" href="newProduct.html" id="underlined">Produtos</a>
+            <a class="header-ajuda" href="ajuda.html">Ajuda</a>
+            <a class="header-sobre" href="sobre.html">Sobre</a>
+        </section>
+        <section class="buscar">
+            <input id="inputBusca" onkeyup="filtrar()" type="text" placeholder="O que você procura?">
+                <ul id="listaProdutos" onblur="">
+                    <li>
+                        <a href="vestidoGalinhaPintadinha.html">
+                            <img width="45" height="" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png" alt="vestido estilo galinha pintadinha azul com pontos brancos e um laço vermelho no meio do vestido">
+                            <span class="item-name">Vestido Galinha Pintadinha</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estiloCampestre.html">
+                            <img width="45" height="" src="./roupas/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png" alt="vestido de estilo campestre">
+                            <span class="item-name">Vestido de estilo Campestre</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoPrimavera.html">
+                            <img width="45" height="" src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="vestido primavera">
+                            <span class="item-name">Vestido Primavera</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoFestaJuninaVermelho.html">
+                            <img width="45" height="" src="./roupas/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="vestido junino quadriculado vermelho">
+                            <span class="item-name">Vestido festa junina quadriculado vermelho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoViolet.html">
+                            <img width="45" height="" src="./roupas/8a34e79b-9767-4888-a299-615493f4f937-removebg-preview.png" alt="vestido violeta com laço da mesma cor">
+                            <span class="item-name">Vestido violeta com laço</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="vestidoArcoIrisJunino.html">
+                            <img width="45" height="" src="./roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png" alt="vestido arco-íris junino">
+                            <span class="item-name">Vestido Arco-Íris junino</span>
+                        </a>
+                    </li>
+                </ul>
+                <script src="filtrar.js"></script>
+        </section>
+    </header>
+    <section class="slider">
+        <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+            <div class="slide-box primeiro">
+                <a href="vestidoPrimavera.html">Vestido Primavera<img class="img-desktop" src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png" alt="slide 1"></a>
+            </div>
+            <div class="slide-box segundo">
+                <a href="vestidoArcoIrisJunino.html">Vestido Arco-Íris junino<img class="img-desktop" src="./roupas/422f62ce-79ba-49c1-860b-98cbdaf021d3-removebg-preview.png" alt="slide 2"></a>
+            </div>
+            <div class="slide-box terceiro">
+                <a href="vestidoFestaJuninaVermelho.html"> Vestido junino quadriculado vermelho<img class="img-desktop" src="./roupas/b2e9d8d0-f50f-485c-9744-73eab95ca585-removebg-preview.png" alt="slide 3"></a>
+            </div>
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+        </div>
+       </section>  
+    <main>
+        <div id="leftColumn" class="column">
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/df79b453-e1cd-4eec-9dd2-499e8689f6f4-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido Galinha Pintadinha
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoGalinhaPintadinha.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/8a34e79b-9767-4888-a299-615493f4f937-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$220,00</h2>
+                        <article>
+                            Vestido violeta com laço
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoViolet.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+        </div>
+
+        <div id="middleColumn" class="column">
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/6da5f6bf-4c3c-47b5-84bb-45c9eb3d18bb-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido Primavera
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoPrimavera.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/a01e793a-679e-4a99-8bca-3b987e371a06-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$250,00</h2>
+                        <article>
+                            Vestido Arco-Íris junino
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoArcoIrisJunino.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+        </div>
+
+
+
+
+
+        <div id="rightColumn" class="column">
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/dd7b5f28-c8ce-409a-aee3-260795cc4f43-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido junino quadriculado vermelho
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='vestidoFestaJuninaVermelho.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+            <!-- divisão de prod -->
+            <div class="prod">
+                <div class="prodLeft">
+                    <img class="prodImg" src="./roupas/903f4a95-204a-4494-b300-abe252848ee0-removebg-preview.png">
+                </div>
+                <div class="prodRight">
+                    <div class="prodDescription">
+                        <h2 class="h2Price">R$150,00</h2>
+                        <article>
+                            Vestido estilo de campestre
+                        </article>
+                    </div>
+                    <div class="prodRightDown">
+                        <input type="button" onclick="location.href='estiloCampestre.html'" value="Comprar" class="buyButton">
+                    </div>
+                </div>
+            </div>
+            <!-- divisão de prod -->
+        </div>
+    </main>
+    <!-- início da divisão para produto personalizado -->
+    <div class="container-roupa-personalizada">
+        <div class="prod" id="roupa-personalizada">
+            <div class="prodRight">
+                <div class="prodDescription">
+                    <h2 class="h2Price"></h2>
+                    <article class="article-personalizado">
+                        Quer uma roupa personalizada do seu jeito? 
+                        Converse diretamente com Zana!
+                    </article>
+                </div>
+                <div class="prodRightDown">
+                    <a class="link-personalizado" href="https://wa.me/+5571988090920"><input type="button" onclick="" value="Conversar" class="button-personalizado"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim da divisão para produto personalizado -->
+    <footer>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Devs</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/Brendoliveira" target="_blank">Brendo</a></li>
+                        <li><a href="https://github.com/lunguinhoantonio" target="_blank">Antônio Marcos</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-links">
+            <ul>
+                <li><b><h5>Design</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><b><h5>Scrum Masters</h5></b>
+                    <ul>
+                        <li><a href="https://github.com/jpgp80" target="_blank">João Pedro</a></li>
+                        <li><a href="https://github.com/DalmoRafael" target="_blank">Dalmo Rafael</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section id="contacts">
+            <h5>Contatos</h5>
+            <a class="contact-links" href="https://wa.me/5571988090920" target="_blank" >
+                <ion-icon name="logo-whatsapp" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                <h4>(71) 98809-0920</h4>
+            </a>
+            <a class="contact-links" href="https://www.instagram.com/zana.costura/" target="_blank">
+                <ion-icon name="logo-instagram" class="icon-links" style="color: #f4f4f4;"></ion-icon>
+                <h4>@zana.costuras</h4>
+            </a>
+            <h4>Zana Costuras &copy</h4>
+            <time>08/07/2024</time>
+        </section>
+        <img src="./logo/seta-cima.png" alt="seta pra cima logo" onclick="scrollToTop()" id="goBack">
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="scripts/slide.js"></script>
+</html>

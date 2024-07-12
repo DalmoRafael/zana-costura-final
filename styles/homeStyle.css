@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* CSS PADRÃO PARA TODAS AS PÁGINAS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #F4E4D5;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 200;
+    color: #343434;
+}
+
+h3{
+    font-size: 1.4em;
+    color: #343434;
+}
+h4 {
+    font-weight: 300;
+}
+
+h5{
+    font-size: 1em;
+    color: #f4f4f4;
+    cursor: default;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: #E9B8B1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 300;
+}
+
+#inputBusca {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 22px;
+    border-radius: 9999px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #343434;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px #474747;
+}
+
+.header-home,
+.header-produto,
+.header-ajuda,
+.header-sobre {
+    transition: 0.2s;
+    font-size: 30px;
+    color: #343434;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: 300;
+}
+
+.header-home:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-produto:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-ajuda:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+.header-sobre:hover {
+    font-size: 36px;
+    text-decoration: underline;
+}
+nav {
+    font-size: 1em;
+    padding-left: 24px;
+}
+li {
+    font-size: 16px;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+    color: #f4f4f4;
+    background-color: #B0AE99;
+    animation: fadeIn 0.5s;
+}
+footer img {
+    margin: auto 0;
+}
+footer a {
+    all: unset;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0;
+    color: #f4f4f4;
+    transition: 0.2s;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#underlined {
+    text-decoration: underline;
+}
+.buscar {
+    display: flex;
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: normal;
+    justify-content: center;
+    position: relative;
+    margin-right: 15%;
+}
+.item-name {
+    margin-left: 15px;
+}
+.nav-links {
+    width: 157px;
+}
+.nav-links > ul > li > ul {
+    padding: 0;
+    margin-bottom: 8px;
+}
+.nav-links h5,
+footer li > a {
+    display: flex;
+    justify-content: center;
+}
+.icon-links {
+    font-size: 24px;
+}
+.link-logo {
+    margin: 0px 2%;
+}
+.logo-home {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    transition: 200ms;
+}
+
+.logo-home:hover {
+    height: 120px;
+}
+.contact-links {
+    display: flex;
+}
+.backTop {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    padding: 5px 10px;
+}
+#listaProdutos {
+    display: none;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+}
+
+#listaProdutos li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #343434;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 5px;
+    margin-left: 100px;
+    margin: 0;
+}
+
+#listaProdutos li a:hover {
+    background: #ddd;
+}
+
+#siteSections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+#goBack {
+    display: none;
+    font-size: 30px;
+    padding: 16px;
+    border-radius: 50%;
+    background-color: #E9B8B1;
+    border: 2px solid #343434;
+    animation: pulse 1.25s infinite;
+    transition: background 200ms;
+    backdrop-filter: blur(16px);
+}
+#goBack:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 157px;
+    height: 100%;
+}
+
+#contacts h5 {
+    margin-bottom: 8px;
+}
+
+#contacts h5, 
+#contacts h4, time {
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN PAGE CSS */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+.see-products,
+.about-us {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 4px solid #E9B8B1;
+    margin: 24px 0;
+}
+.order-products {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    border: 4px solid #E9B8B1;
+}
+p {
+    font-size: 24px;
+}
+.img-card {
+    height: 100%;
+    border-radius: 20px;
+}
+.right-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #343434;
+    width: 100%;
+    padding: 2.5%;
+}
+.card-title{
+    margin: 0 auto;
+    font-weight: 500;
+}
+.card-description {
+    font-weight: 400;
+}
+.btn {
+    all: unset;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px 28px;
+    background-color: #535353;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #F4F4F4;
+    box-shadow: 2px 2px 3px #343434;
+    transition: 0.2s;
+}
+.btn:hover {
+    color: #535353;
+    background-color: #E9B8B1;
+    transform: scale(1.15);
+}
+.link {
+    text-decoration: none;
+}
+.container-cards {
+    margin: 24px 0px;
+    padding: 0 10%;
+    gap: 20px;
+    animation: fadeIn 0.5s;
+}
+.image-top {
+    min-height: 250px;
+    max-height: 800px;
+    height: 20%;
+    width: 100%;
+    animation: fadeIn 0.5s;
+}
+.header-extended {
+    background-color: #E9B8B1;
+    height: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+    /* PADRÃO PARA TODAS AS PÁGINAS */
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 350px;
+        padding: 8px 0px;
+    }
+    #siteSections {
+        flex-direction: column;
+    }
+    .header-home,
+    .header-produto,
+    .header-ajuda,
+    .header-sobre {
+        display: flex;
+        align-items: center;
+        transition: 0.2s;
+        font-size: 26px;
+        color:#474747;
+        text-decoration: none;
+        margin: 4px;
+    }
+
+    .header-home:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-produto:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-ajuda:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    .header-sobre:hover {
+        font-size: 28px;
+        text-decoration: underline;
+    }
+    #inputBusca {
+        font-size: 16px;
+        height: 36px;
+        padding:0 22%;
+    }
+    .logo-home {
+        height: 75px;
+        margin: 12px 0px;
+    }
+    .logo-home:hover {
+        height: 90px;
+    }
+    .buscar {
+        margin-right: 0;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #contacts {
+        margin: 8px 0;
+    }
+    #goBack {
+        margin-bottom: 24px;
+    }
+
+    /* MAIN PAGE CSS */
+
+    .container-cards {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0px 2.5%;
+    }
+    .see-products, .order-products, .about-us {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #E9B8B1;
+    }
+    .see-products, .about-us {
+        max-width: 740px;
+    }
+    .card-title {
+        font-size: 24px;
+    }
+    .left-card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .right-card {
+        display: flex;
+    }
+    .img-card {
+        width: 50%;
+        margin-top: 2.5%;
+        border-radius: 20px;
+    }
+    .card-description {
+        flex-wrap: wrap;
+        margin: 8px 12px;
+        font-size: 18px;
+    }
+    .btn {
+        margin: 8px 0px;
+    }
+
+}
